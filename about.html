@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        body{
+            background-image: url(bg.png);   
+            background-repeat: repeat;
+             }
+    </style>
+</head>
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="#" class="closebtn" onclick="closeNav()">×</a>
+        <a href="Home.html">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">  LOGIN</button>
+        <div id="id01" class="modal">
+          
+            <form class="modal-content animate">
+                <div class="imgcontainer">
+        
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">х</span>
+        
+                <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                </div>
+        
+                <div class="container">
+        
+                    <label for="uname"><b>Логін</b></label>
+                    <input type="text" placeholder="Введіть логін" name="uname" required> 
+        
+                    <label for="psw"><b>Пароль</b></label>
+                    <input type="password" placeholder="Введіть пароль" name="psw" required>
+                
+                    <button type="submit">Увійти</button>
+        
+                    <input type="checkbox" checked="checked" name="remember"> Запам'ятати мене
+             
+                </div>
+        
+            <div class="container" style="background-color:#f1f1f1">
+        
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        
+              <span class="psw"> <a style="color: #111;" href="#"> Забули пароль?</a></span>
+        
+            </div>
+            
+            </form>
+        </div>
+        
+        <style>
+        input[type=text], input[type=password] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+        }
+        
+        
+        button {
+            background-color:#111 ;
+          color:white;
+          font-size: 20px;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          transition: 0.3s;
+        }
+        
+        button:hover {
+            color: chocolate;
+          opacity: 0.8;
+        }
+        
+        .cancelbtn {
+          width: auto;
+          padding: 10px 18px;
+          background-color: #f44336;
+        }
+        
+        .imgcontainer {
+          text-align: center;
+          margin: 24px 0 12px 0;
+          position: relative;
+        }
+        
+        img.avatar {
+          width: 40%;
+          border-radius: 50%;
+        }
+        
+        .container {
+          padding: 16px;
+        }
+        
+        span.psw {
+          float: right;
+          padding-top: 16px;
+        }
+        
+        .modal {
+          display: none; 
+          position: fixed; 
+          left: 0;
+          top: 0;
+          z-index: 1; 
+          width: 500px;
+          height: 100%;
+          overflow: auto; 
+          background-color: rgba(0,0,0,0.4); 
+          padding-top: 60px;
+        }
+        
+        .modal-content {
+          background-color: #fefefe;
+          margin: 5% auto 15% auto;
+          border: 1px solid #888;
+          width: 80%;
+        }
+        
+        .close {
+          position: absolute;
+          right: 25px;
+          top: 0;
+          color: #000;
+          font-size: 35px;
+          font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: red;
+          cursor: pointer;
+        }
+        
+        .animate {
+          -webkit-animation: animatezoom 0.6s;
+          animation: animatezoom 0.6s
+        }
+        
+        @-webkit-keyframes animatezoom {
+          from {-webkit-transform: scale(0)} 
+          to {-webkit-transform: scale(1)}
+        }
+          
+        @keyframes animatezoom {
+          from {transform: scale(0)} 
+          to {transform: scale(1)}
+        }
+        
+        </style>
+        
+        
+        
+        <script>
+        var modal = document.getElementById('id01');
+        
+        window.onclick = function(event) {
+            if (event.target == modal) { 
+                modal.style.display = "none";  
+            }
+        }
+        </script>
+      </div>
+      
+      <div id="main" style="background-color: #ccc;">
+        <button class="openbtn" onclick="openNav()">☰ Menu </button>  
+        <h1> <a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/"> Counter-Strike: Global Offensive</a></h1>
+        <img style="width: 300px; height: 200px; text-align:left;" src="csgo.jpg" alt=" <h3 style="text-align: right;">«Counter-Strike захопила ігрову індустрію зненацька — дивакувата модифікація стала найпопулярнішою у світі бойовою грою для ПК майже одразу після свого випуску в серпні 1999 року», — каже Даґ Ломбарді з Valve.<br/>
+            — «Останні 12 років вона залишалася однією з найпопулярніших ігор у світі, а також однією з головних кіберспортивних дисциплін, і за час існування розійшлася тиражем понад 25 мільйонів копій усім світом.
+           <br/> CS: GO обіцяє розширити відзначений нагородами ігролад CS і подарувати його не тільки гравцям на персональних комп’ютерах, але й перенести його на ігрові консолі нового покоління та платформу Mac.»</h3>
+        <hr/>
+          <div>
+              <table border="1px">
+                  <tr>
+                      <th>Firstname</th>
+                      <td>ruslan</td>
+                  </tr>
+                  <tr>
+                      <th>Lastname</th>
+                      <td>morozov</td>
+                  </tr>
+                  <tr>
+                      <th>Age</th>
+                      <td>14</td>
+                  </tr>
+                  <tr>
+                      <th>phone num</th>
+                      <td>380986374856</td>
+                  </tr>
+                  <tr>
+                      <th>email</th>
+                      <td>email@gmail.co</td>
+                  </tr>
+              </table>
+          </div>
+        </div>
+      
+      
+      <style>
+      .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+      .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidebar a:hover {
+        color: chocolate;
+      }
+      
+      .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      
+      .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #111;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+      }
+      
+      .openbtn:hover {
+        background-color: #444;
+      }
+      
+      #main {
+        transition: margin-left .5s;
+        padding: 16px;
+      }
+    
+    
+      </style>
+      
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script>
+
+</body>
+</html>
